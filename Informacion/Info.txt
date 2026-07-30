@@ -1,1 +1,5 @@
-1- Las resistencias y capacitores tienen que ser medida 2012 (Metric)
+1- Las resistencias y capacitores tienen que ser medida:
+0805 (Imperial) - 2012 (Metric) 
+
+Footprint resistores: RESC2012N (Chip_Resistor_N.PcbLib)
+Footprint capacitores: CAPC2012N (Chip_Capacitor_N.PcbLib)
