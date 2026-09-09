@@ -1,0 +1,46 @@
+- Schematic: 
+	+ Rotar componentes: Shift + SpaceBar
+	+ Espejar: con X e Y
+	+ M + D (Drag): mover objeto con las lineas conectadas
+	+ P + W: wire para cablear
+	+ P + V + N: no ERC pin sin conexion.
+	+ P + S: sheet jerarquico (verificar)
+	+ P + A: pinout del sheet jerarquico (verificar)
+	+ P + N: etiqueta para nodo.
+	+ En cualquier proyecto antes de pasar al PCB:
+		+ Tools -> Annotate Schematic -> "Update Change List" -> A cada componente con "?" le pone un numero (Designator)
+		+ Luego "Accept Changes (Create ECO)" -> "Execute Changes" y si todo esta bien, se puede pasar el PCB.
+		+ Opcional: Tools -> Footprint Manager: se pueden ver los componentes y saber si tiene bien enlazado el footprint o no. Si ademas tocas "Validate" te dice la libreria donde esta.
+
+- Diseño Jerarquico:
+	+ Crear un schematic principal (main): crear con "Sheet Symbol" los bloques del sistema.
+	+ "Design" -> "Create Sheet from sheet symbol" -> hacer click en el "Sheet Symbol" (Bloque) y crea un nuevo archivo esquematico.
+	+ en el "main" -> Ctrl + Doble Cick en el "Sheet Symbol" abre el archivo asociado.
+	+ Colocar los "net label". Seleccionar los labels y "Edit" -> "Smart paste" o Shift + Ctrl + V. -> "Port, Wires and netlabels" y nos crea los puertos. (No anda?)
+	+ Si la opcion anterior no funciona, usar "Port" y unirlo con las "Netlabels"
+	+ Luego "Design" -> "Synchronize sheet entries and ports" -> Seleccionar puertos -> "Add sheet entries" -> los pegamos en el "main" y luego "close".
+
+- PCB:
+	+ Para ver 3D: apretamos 3. Para volver al PCB: 2
+	+ Para rutear: P + T.
+	+ Haciendo Ruteo Interactivo -> Tab: abre configuraciones de pistas
+	+ Haciendo Ruteo Interactivo -> tecla "3" cambia el ancho de pista
+	+ Design -> Rules -> Routing -> Width: configurar anchos de pistas.
+	+ Para los agujeros de la placa -> Place Pad -> aprieto Tab -> Configuraciones del pad y poner "Multilayer"
+	+ Para mover componente y que las pistas se muevan tambien:
+		Preferences -> PCB Editor -> Interactive Routing -> Tildar: "Component ReRoute" y "Move component with relevant routing"
+	+ Tools -> Teardrops: Ajusta las uniones entre las pistas y pads (mas suaves).
+	+ Design -> Layer Stack Manager -> editar capas y layers.
+	+ Tocando "+" y "-" cambiamos de capa (Top Layer, Bottom Layer, etc.)
+	+ "G": cambiar cuadricula
+	+ "Q": cambiar unidades
+	+ Ctrl + M: medir distancias con "dx"
+	+ Finalmente: Tools -> Design Rule Checker -> Run Design rule check. O tambien: T+D+R.
+	+ Ctrl + B: seleccionar todos los componentes.
+	+ Seleccion:  Ctrl + Click izq: Selecciona ///// Ctrl + Doble Click izq: Deselecciona
+	+ Shit + S: seleccionar capas en las que estas ruteando.
+	+ Ctrl + W: resalta componentes por donde no podemos rutear.
+	+ Ctrl + shift (en Routeo Interactivo): cambia como sale la pista; si recta o a 45ª.
+	+ Ctrl + Click Izquierdo (Routeo Interactivo): hace el enrutamiento al pad mas cercano de manera automatica. (Routeo Interactivo)	
+	+ Poligonos:
+		- Cuando estas editando los limites, mientras lo moves: Shift + Espacio: para poner 45º/90º o curvo ese vertice
