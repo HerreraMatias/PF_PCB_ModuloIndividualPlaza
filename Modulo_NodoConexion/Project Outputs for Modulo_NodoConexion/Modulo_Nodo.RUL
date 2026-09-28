@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: C:\Users\ADOX\Desktop\Electronica_I-D\MATIAS PROGRAMAS\Varios_2\PF_PCB_ModuloIndividualPlaza\Modulo_NodoConexion\Modulo_Nodo.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Clearance|RuleName=Clearance_6mil|Scope=Board|Minimum=6.00
