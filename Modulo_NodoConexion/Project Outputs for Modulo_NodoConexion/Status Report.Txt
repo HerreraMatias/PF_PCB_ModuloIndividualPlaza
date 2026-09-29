@@ -1,12 +1,9 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [Modulo_NodoConexion.PrjPcb]
-   Generated File[Modulo_Nodo.TXT]
-   Generated File[Modulo_Nodo.LDP]
-   Generated File[Modulo_Nodo.DRR]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [Modulo_NodoConexion.PrjPcb]
 
 
-Files Generated   : 3
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 14:35:02 On 28/09/2026
+Finished Output Generation At 10:10:06 On 29/09/2026
